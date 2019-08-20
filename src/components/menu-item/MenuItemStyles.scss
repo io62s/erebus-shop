@@ -1,11 +1,10 @@
 .menu-item {
   min-width: 30%;
-  height: 240px;
+  height: 340px; //240
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
   margin: 0 7.5px 15px;
   background-position: center;
   background-size: cover;
@@ -18,7 +17,7 @@
   transition: all 0.2s ease-out;
 
   &.large {
-    height: 380px;
+    height: 480px; //380
   }
 
   &:first-child {
@@ -51,9 +50,9 @@
     }
 
     .subtitle {
-      font-weight: lighter;
+      font-weight: bold;
       font-size: 16px;
-      font-family: "Raleway", sans-serif;
+      font-family: "Open Sans Condensed", sans-serif;
     }
   }
 
@@ -64,7 +63,6 @@
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
-    border: 2px solid #000000;
     filter: grayscale(0%);
   }
 }

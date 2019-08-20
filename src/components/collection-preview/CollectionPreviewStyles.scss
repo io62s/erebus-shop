@@ -4,8 +4,14 @@
   margin-bottom: 30px;
 
   .title {
-    font-size: 28px;
-    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 24px;
+
+    ////// mine ////////////
+    margin: 30px 0;
+    padding: 10px 0;
+    border: 1px solid black;
   }
 
   .preview {
@@ -15,6 +21,6 @@
     ////// mine ////////////
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap: 35px;
+    grid-gap: 30px;
   }
 }

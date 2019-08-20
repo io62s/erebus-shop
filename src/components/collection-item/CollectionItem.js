@@ -8,7 +8,9 @@ function CollectionItem({ id, name, price, imageUrl }) {
       <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
       <div className="collection-footer">
         <span className="name">{name}</span>
-        <span className="price">${price}</span>
+        <span className="price">
+          <strong>${price}</strong>
+        </span>
       </div>
     </div>
   );
