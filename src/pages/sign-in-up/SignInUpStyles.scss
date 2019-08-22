@@ -1,0 +1,9 @@
+.sign-in-and-sign-up {
+  max-width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 380px));
+  justify-content: center;
+  grid-gap: 4rem;
+
+  margin: 30px auto;
+}
