@@ -7,7 +7,7 @@
   margin-bottom: 25px;
 
   .logo-container {
-    width: 70px;
+    width: 100px;
   }
 
   .options {
@@ -28,6 +28,11 @@
         color: gray;
         cursor: pointer;
       }
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .options {
+      width: 90%;
     }
   }
 }
