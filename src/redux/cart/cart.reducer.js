@@ -1,10 +1,12 @@
 import CartActionTypes from "./cart.types";
+import { addItemToCart } from "./cart.utils";
 
 const INITIAL_STATE = {
-  hidden: true
+  hidden: true,
+  cartItems: []
 };
 
-const { TOGGLE_CART_HIDDEN } = CartActionTypes;
+const { TOGGLE_CART_HIDDEN, ADD_ITEM } = CartActionTypes;
 
 const cartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
@@ -13,7 +15,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         ...state,
         hidden: !state.hidden
       };
-
+    case ADD_ITEM:
+      return {
+        ...state,
+        cartItems: addItemToCart(state.cartItems, action.payload)
+      };
     default:
       return state;
   }
