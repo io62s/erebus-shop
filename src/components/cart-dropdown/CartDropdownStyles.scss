@@ -9,12 +9,20 @@
   background-color: white;
   top: 90px;
   right: 40px;
-  z-index: 5;
+  z-index: 115;
+
+  .empty-message {
+    font-size: 20px;
+    margin: 50px 0;
+    font-weight: 700;
+  }
 
   .cart-items {
     height: 340px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     overflow: scroll;
   }
 
