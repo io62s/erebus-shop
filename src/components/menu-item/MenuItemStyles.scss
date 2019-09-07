@@ -42,32 +42,41 @@
   }
 
   .content {
-    padding: 20px 35px;
+    padding: 10px 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+    bottom: 40px;
+    // left: 0;
+    // right: 0;
     transition: background 0.2s ease-out;
     .title {
       font-weight: 900;
-      margin-bottom: 6px;
       font-size: 2rem;
-      color: #252525;
+      color: #ffffff;
       font-family: "Merriweather", serif;
       text-transform: uppercase;
     }
 
     .subtitle {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 24px;
       font-family: "Open Sans Condensed", sans-serif;
+      color: white;
     }
   }
 
   &:hover .content {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+  }
+  &:hover .title {
+    color: black;
+  }
+  &:hover .subtitle {
+    color: black;
   }
   &:hover .image {
     transform: scale(1.1);
