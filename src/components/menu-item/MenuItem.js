@@ -6,7 +6,7 @@ function MenuItem({ title, imageUrl, size, linkUrl, history, match }) {
   return (
     <div
       className={`menu-item ${size}`}
-      onClick={() => history.push(`${linkUrl}`)}
+      onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
       <div
         className="image"
