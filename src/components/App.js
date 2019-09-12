@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 import Header from "./header/Header";
 import HomePage from "../pages/homepage/HomePage";
 import ShopPage from "../pages/shop/ShopPage";
@@ -7,9 +9,7 @@ import SignInUp from "../pages/sign-in-up/SignInUp";
 import Checkout from "../pages/checkout/Checkout";
 import Collection from "../pages/collection/Collection";
 import { auth, createUserProfiledocument } from "../firebase/firebase.utils";
-import { connect } from "react-redux";
 import { setCurrentUser } from "../redux/user/user.actions";
-import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../redux/user/user.selectors";
 import "../App.css";
 
@@ -45,7 +45,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/shop" component={ShopPage} />
-          <Route exact path="/shop/:id" component={Collection} />
+          <Route exact path="/shop/:collectionId" component={Collection} />
           <Route exact path="/checkout" component={Checkout} />
           <Route
             exact
