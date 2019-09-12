@@ -149,6 +149,33 @@ const SHOP_DATA = {
         name: "Tan Trench",
         imageUrl: "https://i.ibb.co/M6hHc3F/brown-trench.png",
         price: 185
+      },
+      {
+        id: 23,
+        name: "Denim Jacket",
+        imageUrl:
+          "https://i.ibb.co/Gx5YF30/boy-close-up-denim-jacket-1105058.jpg",
+        price: 155
+      },
+      {
+        id: 24,
+        name: "Orange Bomber Jacket",
+        imageUrl: "https://i.ibb.co/HXgLM1v/orange-bomber-jacket.jpg",
+        price: 200
+      },
+      {
+        id: 25,
+        name: "Black Leather Jacket",
+        imageUrl:
+          "https://i.ibb.co/dMWmD76/adult-beautiful-black-leather-jacket-1035685.jpg",
+        price: 260
+      },
+      {
+        id: 26,
+        name: "Brown Full-zip Hoodie",
+        imageUrl:
+          "https://i.ibb.co/p4f4gVK/kal-visuals-6-TIo-PIp-Mv-Lc-unsplash.jpg",
+        price: 100
       }
     ]
   },
