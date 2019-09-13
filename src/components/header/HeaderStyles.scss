@@ -39,6 +39,11 @@
   @media screen and (max-width: 650px) {
     .options {
       width: 90%;
+
+      .option {
+        padding: 0 10px;
+        font-size: 1.2rem;
+      }
     }
   }
 }
