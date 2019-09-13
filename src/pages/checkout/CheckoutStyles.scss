@@ -29,6 +29,13 @@
     margin-left: auto;
     font-size: 36px;
   }
+
+  .text-warning {
+    color: red;
+    margin: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 950px) {
   .checkout-page {
