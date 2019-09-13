@@ -17,12 +17,13 @@ function Header({ currentUser, hidden }) {
         <Logo className="logo" />
       </Link>
       <div className="options">
+        <Link to="/" className="option">
+          Home
+        </Link>
         <Link to="/shop" className="option">
           Shop
         </Link>
-        <Link to="/shop" className="option">
-          Contact
-        </Link>
+
         {currentUser ? (
           <div className="option" onClick={() => auth.signOut()}>
             Sign Out
