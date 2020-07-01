@@ -29,9 +29,10 @@
       color: black;
       font-size: 1.6rem;
       font-weight: 400;
+      transition: 0.2s ease-out;
 
       &:hover {
-        color: gray;
+        color: rgb(231, 10, 183);
         cursor: pointer;
       }
     }

@@ -2,8 +2,13 @@
   //width: 22%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 450px;
+  padding: 0.5rem 0.5rem 1rem;
   align-items: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba($color: #000000, $alpha: 0.1);
+  transition: 0.2s ease-out;
 
   //mine////
   position: relative;
@@ -13,7 +18,8 @@
     height: 95%;
     background-size: cover;
     background-position: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
   }
 
   .custom-button {
@@ -21,6 +27,7 @@
     opacity: 0;
     position: absolute;
     bottom: 20%;
+    border-radius: 5px;
     transform: translateY(30%);
     cursor: pointer;
     z-index: 11;
@@ -44,11 +51,16 @@
 
     .price {
       width: 10%;
+      font-size: 20px;
       text-align: right;
+      color: rgb(231, 10, 183);
     }
   }
+  &:hover {
+    border: 1px solid rgb(231, 10, 183);
+  }
   &:hover .custom-button {
-    opacity: 0.7;
+    opacity: 0.9;
     transform: translateY(0%);
   }
 }
