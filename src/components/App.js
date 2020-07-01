@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{maxWidth: "1800px", margin: "0, auto"}}>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
