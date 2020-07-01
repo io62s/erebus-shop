@@ -14,6 +14,10 @@ function MenuItem({ title, imageUrl, size, linkUrl, history, match }) {
       ></div>
       <div className="content">
         <h1 className="title">{title}</h1>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 87bb600a1e2fbd9209bab7130043d745449bfbf0
       </div>
     </div>
   );
