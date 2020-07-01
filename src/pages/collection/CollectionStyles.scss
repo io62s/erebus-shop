@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 24px;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 5px;
 
     ////// mine ////////////
     margin: 30px 0 10px;
@@ -16,7 +16,7 @@
 
   .items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 10px;
 
     & .collection-item {
